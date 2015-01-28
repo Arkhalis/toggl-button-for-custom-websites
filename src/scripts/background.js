@@ -121,6 +121,9 @@ var TogglButton = {
     }, {
       'url': 'zendesk.com',
       'app': 'Zendesk'
+    }, {
+      'url': 'jira.re-logic.com',
+      'app': 'JIRA'
     }],
 
   checkUrl: function (tabId, changeInfo, tab) {
@@ -208,6 +211,9 @@ var TogglButton = {
               case "Zendesk":
                 chrome.tabs.executeScript({file: 'scripts/content/zendesk.js'});
                 break;
+			  case "JIRA":
+				chrome.tabs.executeScript({file: 'scripts/content/jira.js'});
+				break;
               default:
                 console.log('Invalid app name: ' + curApp);
             }

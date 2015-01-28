@@ -133,6 +133,7 @@ var Settings = {
         '<option value="Wunderlist">Wunderlist</option>' +
         '<option value="YouTrack">YouTrack</option>' +
         '<option value="Zendesk">Zendesk</option>' +
+		'<option value="JIRA">JIRA</option>' +
       '</select>' +
     '</label>' +
     '<div class="custom-website-remove-button"></div>';
